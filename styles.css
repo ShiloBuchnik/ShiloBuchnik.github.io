@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Make the image responsive and set a max width */
+.profile-picture {
+    width: 100%;
+    max-width: 640px;
+    height: auto; /* Keep the image aspect ratio */
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.name {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #555;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.project-links, .social-links {
+    margin-bottom: 2rem;
+}
+
+.project-links a, .social-links a {
+    display: inline-block;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #89037e;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.project-links a:hover, .social-links a:hover {
+    background-color: #63035b;
+}
